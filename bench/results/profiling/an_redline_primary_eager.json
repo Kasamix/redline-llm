@@ -1,0 +1,185 @@
+{
+  "sqlite": "/workspace/traces/p406_redline_primary_eager.sqlite",
+  "engine": "redline",
+  "segments": [
+    {
+      "wall_ms": 3355.944423,
+      "start_s": 0.013714166
+    }
+  ],
+  "wave": {
+    "wall_ms": 3355.944423,
+    "gpu_busy_ms": 3237.630597,
+    "anchors": 319,
+    "anchor_kernels": {
+      "GreedyArgmaxVecKernel": 319
+    },
+    "steps": 318,
+    "steady_decode_steps": 255,
+    "prefill_phase_ms": 1557.128961,
+    "prefill_phase_busy_ms": 1529.844774,
+    "decode_phase_ms": 1798.815462
+  },
+  "tail": {
+    "steps": 200,
+    "wall_ms_total": 1417.4428160000002,
+    "busy_ms_total": 1350.364092,
+    "gap_ms_total": 67.07872400000016,
+    "gap_pct_of_wall": 4.732376025531329,
+    "per_step": {
+      "wall_us": {
+        "p50": 7075.182,
+        "p99": 7600.114,
+        "mean": 7087.214080000001,
+        "min": 6844.107,
+        "max": 7907.027
+      },
+      "busy_us": {
+        "p50": 6746.545,
+        "p99": 6953.356,
+        "mean": 6751.82046,
+        "min": 6539.618,
+        "max": 6956.461
+      },
+      "gap_us": {
+        "p50": 307.936,
+        "p99": 918.355,
+        "mean": 335.39362,
+        "min": 291.561,
+        "max": 1034.277
+      },
+      "macro_gap_us": {
+        "p50": 0.0,
+        "p99": 631.844,
+        "mean": 34.734320000000004,
+        "min": 0.0,
+        "max": 752.869
+      },
+      "micro_gap_us": {
+        "p50": 300.243,
+        "p99": 337.373,
+        "mean": 300.65930000000003,
+        "min": 272.67,
+        "max": 353.438
+      },
+      "kernels": {
+        "p50": 312,
+        "p99": 312,
+        "mean": 312.0,
+        "min": 312,
+        "max": 312
+      },
+      "memcpys": {
+        "p50": 5,
+        "p99": 5,
+        "mean": 5.0,
+        "min": 5,
+        "max": 5
+      },
+      "memsets": {
+        "p50": 28,
+        "p99": 28,
+        "mean": 28.0,
+        "min": 28,
+        "max": 28
+      }
+    },
+    "class_us_per_step": {
+      "gemm": 3822.004615,
+      "attention": 2618.384845,
+      "norm_act_rope_embed": 222.63031999999998,
+      "kv_cache": 35.679265,
+      "memset": 27.08953,
+      "sampler": 20.45837,
+      "memcpy": 5.5735149999999996
+    },
+    "class_inst_per_step": {
+      "norm_act_rope_embed": 114.0,
+      "gemm": 141.0,
+      "kv_cache": 28.0,
+      "attention": 28.0,
+      "sampler": 1.0
+    },
+    "api_per_step": {
+      "cudaLaunchKernel": 227.0,
+      "cuKernelGetFunction": 85.0,
+      "cudaMemsetAsync": 85.0,
+      "cuLaunchKernel": 85.0,
+      "cudaMemcpyAsync": 5.0,
+      "cudaStreamSynchronize": 1.0
+    },
+    "top_kernels": [
+      {
+        "name": "Kernel2",
+        "inst_per_step": 85.0,
+        "us_per_step": 2826.1111800000003,
+        "avg_us": 33.248366823529416
+      },
+      {
+        "name": "PagedAttentionDecodeKernel",
+        "inst_per_step": 28.0,
+        "us_per_step": 2618.384845,
+        "avg_us": 93.51374446428571
+      },
+      {
+        "name": "ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x5_tn",
+        "inst_per_step": 28.0,
+        "us_per_step": 953.4357799999999,
+        "avg_us": 34.05127785714286
+      },
+      {
+        "name": "RmsNormResidualVecKernel",
+        "inst_per_step": 56.0,
+        "us_per_step": 115.72982,
+        "avg_us": 2.0666039285714284
+      },
+      {
+        "name": "SiluMulHalf2Kernel",
+        "inst_per_step": 28.0,
+        "us_per_step": 58.489065000000004,
+        "avg_us": 2.0888951785714287
+      },
+      {
+        "name": "RopeInplaceSharedKernel",
+        "inst_per_step": 28.0,
+        "us_per_step": 44.984545,
+        "avg_us": 1.6065908928571428
+      },
+      {
+        "name": "splitKreduce_kernel",
+        "inst_per_step": 28.0,
+        "us_per_step": 42.457655,
+        "avg_us": 1.5163448214285715
+      },
+      {
+        "name": "KvScatterKernel",
+        "inst_per_step": 28.0,
+        "us_per_step": 35.679265,
+        "avg_us": 1.2742594642857143
+      },
+      {
+        "name": "GreedyArgmaxVecKernel",
+        "inst_per_step": 1.0,
+        "us_per_step": 20.45837,
+        "avg_us": 20.45837
+      },
+      {
+        "name": "RmsNormVecKernel",
+        "inst_per_step": 1.0,
+        "us_per_step": 1.775205,
+        "avg_us": 1.775205
+      },
+      {
+        "name": "EmbedGatherVec8Kernel",
+        "inst_per_step": 1.0,
+        "us_per_step": 1.6516849999999998,
+        "avg_us": 1.6516849999999998
+      }
+    ]
+  },
+  "nvtx_crosscheck": {
+    "steps_total": 319,
+    "decode_steps": 0,
+    "decode_wall_us_p50": null
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "sqlite": "/workspace/traces/decode500.sqlite",
+  "nvtx": {
+    "steps_total": 575,
+    "decode_steps": 511,
+    "prefill_steps": 64,
+    "prefill_ranges": 64,
+    "graph_replays": 511,
+    "replay_labels": [
+      "graph_replay[b=64]"
+    ],
+    "prefill_after_decode_window": 0
+  },
+  "decode_window": {
+    "wall_ms": 2763.464267,
+    "gpu_busy_ms": 2680.845975,
+    "gap_total_ms": 82.618292,
+    "gap_pct": 2.9896638428290556,
+    "gpu_anchored": {
+      "wall_ms": 2763.365315,
+      "gap_ms": 82.51934,
+      "gap_pct": 2.986190047044142
+    },
+    "holes": 176296,
+    "gap_by_class_ms": {
+      "h2d_inputs": 8.583729,
+      "graph_replay": 12.525477,
+      "d2h_tokens": 52.247234,
+      "step_host_other": 8.12202,
+      "between_steps": 1.139832
+    },
+    "gap_by_class_pct_of_wall": {
+      "h2d_inputs": 0.3106147997823921,
+      "graph_replay": 0.45325272157752855,
+      "d2h_tokens": 1.890642648211959,
+      "step_host_other": 0.29390718371101704,
+      "between_steps": 0.0412464895461592
+    },
+    "top_holes": [
+      {
+        "us": 1621.675,
+        "at_ms_into_window": 1377.722323,
+        "classes": [
+          "h2d_inputs",
+          "d2h_tokens",
+          "between_steps"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "memcpy "
+      },
+      {
+        "us": 1581.995,
+        "at_ms_into_window": 2253.375867,
+        "classes": [
+          "h2d_inputs",
+          "d2h_tokens",
+          "between_steps"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "memcpy "
+      },
+      {
+        "us": 610.661,
+        "at_ms_into_window": 606.453381,
+        "classes": [
+          "h2d_inputs",
+          "d2h_tokens",
+          "between_steps"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "memcpy "
+      },
+      {
+        "us": 248.033,
+        "at_ms_into_window": 612.368045,
+        "classes": [
+          "h2d_inputs",
+          "d2h_tokens",
+          "between_steps"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "memcpy "
+      },
+      {
+        "us": 232.065,
+        "at_ms_into_window": 1312.337091,
+        "classes": [
+          "h2d_inputs",
+          "d2h_tokens",
+          "between_steps"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "memcpy "
+      },
+      {
+        "us": 224.289,
+        "at_ms_into_window": 607.08289,
+        "classes": [
+          "graph_replay"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "kernel EmbedGatherHalf2Kernel"
+      },
+      {
+        "us": 115.361,
+        "at_ms_into_window": 2393.691442,
+        "classes": [
+          "h2d_inputs",
+          "d2h_tokens",
+          "between_steps"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "memcpy "
+      },
+      {
+        "us": 76.929,
+        "at_ms_into_window": 313.901782,
+        "classes": [
+          "h2d_inputs",
+          "d2h_tokens",
+          "between_steps"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "memcpy "
+      },
+      {
+        "us": 69.454,
+        "at_ms_into_window": 2763.394813,
+        "classes": [
+          "d2h_tokens"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "none "
+      },
+      {
+        "us": 64.161,
+        "at_ms_into_window": 2393.832883,
+        "classes": [
+          "graph_replay"
+        ],
+        "gpu_before": "memcpy ",
+        "gpu_after": "kernel EmbedGatherHalf2Kernel"
+      }
+    ]
+  },
+  "per_step": {
+    "dur_us_p50": 5423.23,
+    "dur_us_p99": 5918.826,
+    "gap_us_p50": 150.223,
+    "gap_us_p99": 217.928,
+    "gap_us_max": 1742.105,
+    "gap_us_mean": 159.44904109589044,
+    "kernels_min": 312,
+    "kernels_max": 312
+  },
+  "copies": {
+    "h2d_per_decode_step_min": 4,
+    "h2d_per_decode_step_max": 4,
+    "d2h_per_decode_step_min": 1,
+    "d2h_per_decode_step_max": 1,
+    "h2d_bytes_hist": {
+      "256": 1533,
+      "32768": 511
+    },
+    "d2h_bytes_hist": {
+      "256": 511
+    },
+    "h2d_srcKind_hist": {
+      "Pinned": 2044
+    },
+    "d2h_dstKind_hist": {
+      "Pinned": 511
+    },
+    "copies_outside_decode_steps": {
+      "Host-to-Device": 192,
+      "Device-to-Host": 64
+    },
+    "capture_srcKind_hist": {
+      "Pinned": 2236,
+      "Device": 575
+    },
+    "capture_dstKind_hist": {
+      "Device": 2236,
+      "Pinned": 575
+    },
+    "memcpys_total_capture": 2811,
+    "memsets_in_decode_steps": 14308,
+    "memsets_total_capture": 14308,
+    "pageable_transfers_total_capture": 0,
+    "pageable_first5": []
+  },
+  "gates": {
+    "gap_lt_gate": true,
+    "h2d_exactly_4_per_step": true,
+    "d2h_exactly_1_per_step": true,
+    "h2d_all_pinned": true,
+    "d2h_all_pinned": true,
+    "zero_pageable_in_capture": true
+  },
+  "gap_gate_pct": 5.0
+}

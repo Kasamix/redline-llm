@@ -1,0 +1,41 @@
+
+NOTICE: Existing SQLite export found: /workspace/p305/nsys_v4final_node.sqlite
+        It is assumed file was previously exported from: /workspace/p305/nsys_v4final_node.nsys-rep
+        Consider using --force-export=true if needed.
+
+Processing [/workspace/p305/nsys_v4final_node.sqlite] with [/opt/nvidia/nsight-systems/2024.2.3/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns) | Med (ns) | Min (ns) | Max (ns) | StdDev (ns) |                                                 Name                                                 |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+|     29.7 |      1020097733 |      3640 | 280246.6 | 279250.0 |   179970 |   381955 |     92279.4 | ampere_fp16_s1688gemm_fp16_64x128_sliced1x2_ldg8_f2f_tn                                              |
+|     19.8 |       678907849 |      7560 |  89802.6 |  92096.0 |     2976 |   105249 |     16175.2 | void redline::kernels::<unnamed>::PagedAttentionDecodeKernel<(int)256>(__half *, long, const __half… |
+|     17.3 |       594923057 |      7453 |  79823.3 |  63328.0 |    61824 |   542435 |     87067.5 | void cutlass::Kernel2<cutlass_80_tensorop_f16_s16816gemm_relu_f16_64x64_32x6_tn_align8>(T1::Params)  |
+|      7.2 |       247841724 |      7196 |  34441.6 |  34401.0 |    33696 |    37984 |       274.9 | ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_stages_64x5_tn                                            |
+|      3.8 |       129949305 |     14420 |   9011.7 |   9184.0 |     7839 |    34015 |      1190.1 | void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_128x2_tn_align8>(T1::Param… |
+|      3.1 |       106769131 |      3640 |  29332.2 |  29023.5 |    26976 |    33408 |      1473.0 | void cutlass::Kernel2<cutlass_75_tensorop_s1688gemm_f16_128x64_tn_align1>(T1::Params)                |
+|      3.0 |       103761720 |      3640 |  28506.0 |  28448.0 |    27584 |    29536 |       376.4 | void cutlass::Kernel2<cutlass_75_tensorop_f16_s1688gemm_f16_128x64_nn_align1>(T1::Params)            |
+|      2.9 |       100428913 |     18760 |   5353.4 |   3456.0 |     2400 |    15200 |      4111.9 | redline::kernels::<unnamed>::RmsNormResidualKernel(__half *, __half *, const __half *, const __half… |
+|      2.5 |        85384100 |      1820 |  46914.3 |  46849.0 |    45249 |    49376 |       752.4 | redline::kernels::<unnamed>::PrefillCausalSoftmaxKernel(__half *, const float *, int, int, int)      |
+|      2.4 |        83382739 |      1820 |  45814.7 |  45728.0 |    44289 |    48288 |       722.1 | ampere_fp16_s1688gemm_fp16_128x64_sliced1x2_ldg8_relu_f2f_tn                                         |
+|      2.2 |        75168016 |      1820 |  41301.1 |  41216.5 |    39840 |    43361 |       599.7 | ampere_fp16_s1688gemm_fp16_64x64_sliced1x4_ldg8_f2f_tn                                               |
+|      1.8 |        63390984 |      9380 |   6758.1 |   2144.0 |     1023 |    26753 |      9497.8 | redline::kernels::<unnamed>::SiluMulHalf2Kernel(__half2 *, const __half2 *, long, int, int)          |
+|      1.6 |        53398415 |       745 |  71675.7 |   8512.0 |     6751 |   502724 |    143354.1 | std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, __half, __half, __half, float, (b… |
+|      0.9 |        29573545 |      9380 |   3152.8 |   1792.0 |     1215 |     9216 |      2801.8 | redline::kernels::<unnamed>::RopeInplaceKernel(__half *, __half *, long, long, const int *, int, in… |
+|      0.4 |        14920536 |       479 |  31149.3 |  10400.0 |     8672 |   501636 |     42723.9 | void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_128x2_tn_align8>(T1::Param… |
+|      0.4 |        13566933 |      9380 |   1446.4 |   1280.0 |     1120 |     2528 |       354.6 | void redline::kernels::<unnamed>::KvScatterKernel<uint4>(__half *, const __half *, const __half *, … |
+|      0.3 |        11255491 |      7308 |   1540.2 |   1536.0 |     1344 |     1697 |        27.2 | void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, __half, __half, float, __half, (bool)0, _… |
+|      0.2 |         7756629 |       224 |  34627.8 |  34560.0 |    20128 |    36417 |      1052.6 | std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, __half, float, float, float, (boo… |
+|      0.2 |         7121289 |       335 |  21257.6 |  23905.0 |    11456 |    24832 |      5046.2 | redline::kernels::<unnamed>::GreedyArgmaxKernel(int *, const __half *, int, int)                     |
+|      0.1 |         3286912 |      1820 |   1806.0 |   1792.0 |     1696 |     1952 |        35.5 | void redline::kernels::<unnamed>::KvGatherKernel<uint4>(__half *, __half *, long, long, long, long,… |
+|      0.1 |         1810603 |        28 |  64664.4 |  64688.0 |    63680 |    65376 |       329.4 | void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x1_tn_align8>(T1::Params) |
+|      0.0 |         1070535 |       335 |   3195.6 |   2624.0 |     2337 |     5888 |      1204.4 | redline::kernels::<unnamed>::RmsNormKernel(__half *, const __half *, const __half *, int, int, floa… |
+|      0.0 |          891272 |       335 |   2660.5 |   1985.0 |     1856 |     5728 |      1338.7 | redline::kernels::<unnamed>::EmbedGatherHalf2Kernel(__half *, long, const __half *, const int *, in… |
+|      0.0 |          600037 |         1 | 600037.0 | 600037.0 |   600037 |   600037 |         0.0 | void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_32x2_tn_align8>(T1::Params) |
+|      0.0 |          507907 |         1 | 507907.0 | 507907.0 |   507907 |   507907 |         0.0 | void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_16x16_128x1_tn_align8>(T1::Param… |
+|      0.0 |          290819 |       224 |   1298.3 |   1312.0 |     1279 |     1344 |        17.0 | void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, __half, float, __half, (bool)0, __… |
+|      0.0 |          197954 |        28 |   7069.8 |   7072.0 |     6944 |     7168 |        49.2 | void cutlass::Kernel2<cutlass_80_wmma_tensorop_f16_s161616gemm_f16_32x32_64x2_tn_align8>(T1::Params) |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+

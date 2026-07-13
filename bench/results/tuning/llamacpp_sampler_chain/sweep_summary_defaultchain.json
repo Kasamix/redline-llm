@@ -1,0 +1,29 @@
+{
+ "arms": [
+  {
+   "label": "b2048_ub2048",
+   "throughput_tok_s": 1160.447626247454,
+   "file": "/workspace/results/p403/tuning/llamacpp_primary_b2048_ub2048.json"
+  },
+  {
+   "label": "b4096_ub1024",
+   "throughput_tok_s": 1191.5827777803672,
+   "file": "/workspace/results/p403/tuning/llamacpp_primary_b4096_ub1024.json"
+  },
+  {
+   "label": "b8192_ub2048",
+   "throughput_tok_s": 1185.5444156989809,
+   "file": "/workspace/results/p403/tuning/llamacpp_primary_b8192_ub2048.json"
+  },
+  {
+   "label": "default_b2048_ub512",
+   "throughput_tok_s": 1121.5155871678116,
+   "file": "/workspace/results/p403/tuning/llamacpp_primary_default_b2048_ub512.json"
+  }
+ ],
+ "winner": {
+  "label": "b4096_ub1024",
+  "throughput_tok_s": 1191.5827777803672,
+  "file": "/workspace/results/p403/tuning/llamacpp_primary_b4096_ub1024.json"
+ }
+}

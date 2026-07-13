@@ -1,0 +1,161 @@
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_ZN44_GLOBAL__N__33192532_15_p307_harness_cu_main14FillHalfKernelEP6__halflffm' for 'sm_89'
+ptxas info    : Function properties for _ZN44_GLOBAL__N__33192532_15_p307_harness_cu_main14FillHalfKernelEP6__halflffm
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, used 0 barriers, 384 bytes cmem[0]
+ptxas info    : Compile time = 4.491 ms
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0921RmsNormResidualKernelILi256EEEvP6__halfS4_PKS3_S6_iif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0921RmsNormResidualKernelILi256EEEvP6__halfS4_PKS3_S6_iif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 28 registers, used 1 barriers, 32 bytes smem, 396 bytes cmem[0]
+ptxas info    : Compile time = 19.371 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi4EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi4EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 32 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 15.480 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi3EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi3EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 28 registers, used 1 barriers, 32 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 17.221 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi2EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi2EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 1 barriers, 32 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 13.208 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi1EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi256ELi1EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 1 barriers, 32 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 12.337 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0921RmsNormResidualKernelILi512EEEvP6__halfS4_PKS3_S6_iif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0921RmsNormResidualKernelILi512EEEvP6__halfS4_PKS3_S6_iif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 1 barriers, 64 bytes smem, 396 bytes cmem[0]
+ptxas info    : Compile time = 23.359 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi4EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi4EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 33 registers, used 1 barriers, 64 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 15.938 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi3EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi3EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 35 registers, used 1 barriers, 64 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 13.584 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi2EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi2EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 64 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 11.874 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi1EEEvP7__half2S4_PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0924RmsNormResidualVecKernelILi512ELi1EEEvP7__half2S4_PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 1 barriers, 64 bytes smem, 400 bytes cmem[0]
+ptxas info    : Compile time = 10.242 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0913RmsNormKernelILi256EEEvP6__halfPKS3_S6_iif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0913RmsNormKernelILi256EEEvP6__halfPKS3_S6_iif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 29 registers, used 1 barriers, 32 bytes smem, 388 bytes cmem[0]
+ptxas info    : Compile time = 22.001 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi4EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi4EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 29 registers, used 1 barriers, 32 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 12.259 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi3EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi3EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 1 barriers, 32 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 12.070 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi2EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi2EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 1 barriers, 32 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 10.149 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi1EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi256ELi1EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 1 barriers, 32 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 9.236 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0913RmsNormKernelILi512EEEvP6__halfPKS3_S6_iif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0913RmsNormKernelILi512EEEvP6__halfPKS3_S6_iif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 1 barriers, 64 bytes smem, 388 bytes cmem[0]
+ptxas info    : Compile time = 19.191 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi4EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi4EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 35 registers, used 1 barriers, 64 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 13.524 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi3EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi3EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 64 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 12.751 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi2EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi2EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 31 registers, used 1 barriers, 64 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 10.807 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi1EEEvP7__half2PKS3_S6_iiif' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels43_GLOBAL__N__bc2a16a9_10_rmsnorm_cu_4655ad0916RmsNormVecKernelILi512ELi1EEEvP7__half2PKS3_S6_iiif
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 1 barriers, 64 bytes smem, 392 bytes cmem[0]
+ptxas info    : Compile time = 9.897 ms
+ptxas info    : 24 bytes gmem, 256 bytes cmem[3], 8 bytes cmem[4]
+ptxas info    : Compiling entry function '_ZN7redline7kernels39_GLOBAL__N__aa47e760_7_rope_cu_36c49e0717RopeInplaceKernelEP6__halfS3_llPKiii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels39_GLOBAL__N__aa47e760_7_rope_cu_36c49e0717RopeInplaceKernelEP6__halfS3_llPKiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers, 400 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 14.649 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels39_GLOBAL__N__aa47e760_7_rope_cu_36c49e0723RopeInplaceSharedKernelEP6__halfS3_llPKiiii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels39_GLOBAL__N__aa47e760_7_rope_cu_36c49e0723RopeInplaceSharedKernelEP6__halfS3_llPKiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 1 barriers, 512 bytes smem, 404 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 10.245 ms
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_ZN7redline7kernels44_GLOBAL__N__98a276ae_11_silu_mul_cu_dc6c3ba518SiluMulHalf2KernelEP7__half2PKS2_lii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels44_GLOBAL__N__98a276ae_11_silu_mul_cu_dc6c3ba518SiluMulHalf2KernelEP7__half2PKS2_lii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 27 registers, used 0 barriers, 384 bytes cmem[0]
+ptxas info    : Compile time = 10.881 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels44_GLOBAL__N__98a276ae_11_silu_mul_cu_dc6c3ba519SiluMulScalarKernelEP6__halfPKS2_lii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels44_GLOBAL__N__98a276ae_11_silu_mul_cu_dc6c3ba519SiluMulScalarKernelEP6__halfPKS2_lii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers, 384 bytes cmem[0]
+ptxas info    : Compile time = 8.473 ms
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_ZN7redline7kernels41_GLOBAL__N__757ebd27_9_argmax_cu_21ea009e21GreedyArgmaxVecKernelILi256EEEvPiPK6__halfii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels41_GLOBAL__N__757ebd27_9_argmax_cu_21ea009e21GreedyArgmaxVecKernelILi256EEEvPiPK6__halfii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 25 registers, used 1 barriers, 64 bytes smem, 376 bytes cmem[0]
+ptxas info    : Compile time = 14.126 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels41_GLOBAL__N__757ebd27_9_argmax_cu_21ea009e21GreedyArgmaxVecKernelILi1024EEEvPiPK6__halfii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels41_GLOBAL__N__757ebd27_9_argmax_cu_21ea009e21GreedyArgmaxVecKernelILi1024EEEvPiPK6__halfii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 28 registers, used 1 barriers, 256 bytes smem, 376 bytes cmem[0]
+ptxas info    : Compile time = 17.933 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels41_GLOBAL__N__757ebd27_9_argmax_cu_21ea009e18GreedyArgmaxKernelEPiPK6__halfii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels41_GLOBAL__N__757ebd27_9_argmax_cu_21ea009e18GreedyArgmaxKernelEPiPK6__halfii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 1 barriers, 64 bytes smem, 376 bytes cmem[0]
+ptxas info    : Compile time = 15.075 ms
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_ZN7redline7kernels48_GLOBAL__N__5905cbd6_15_embed_gather_cu_d4abdddc23EmbedGatherScalarKernelEP6__halflPKS2_PKii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels48_GLOBAL__N__5905cbd6_15_embed_gather_cu_d4abdddc23EmbedGatherScalarKernelEP6__halflPKS2_PKii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers, 388 bytes cmem[0]
+ptxas info    : Compile time = 4.996 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels48_GLOBAL__N__5905cbd6_15_embed_gather_cu_d4abdddc22EmbedGatherHalf2KernelEP6__halflPKS2_PKii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels48_GLOBAL__N__5905cbd6_15_embed_gather_cu_d4abdddc22EmbedGatherHalf2KernelEP6__halflPKS2_PKii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 388 bytes cmem[0]
+ptxas info    : Compile time = 6.471 ms
+ptxas info    : Compiling entry function '_ZN7redline7kernels48_GLOBAL__N__5905cbd6_15_embed_gather_cu_d4abdddc21EmbedGatherVec8KernelEP6__halflPKS2_PKii' for 'sm_89'
+ptxas info    : Function properties for _ZN7redline7kernels48_GLOBAL__N__5905cbd6_15_embed_gather_cu_d4abdddc21EmbedGatherVec8KernelEP6__halflPKS2_PKii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 39 registers, used 0 barriers, 388 bytes cmem[0]
+ptxas info    : Compile time = 7.487 ms

@@ -1,0 +1,14 @@
+device NVIDIA GeForce RTX 4090 | SMs 128 | memclk 10501 MHz | bus 384 bit | L2 75.5 MB
+rated DRAM peak (2*memclk*bus): 1008.1 GB/s
+measured peak: read-kernel 957.8 GB/s | memcpyD2D 919.3 GB/s
+oracle cross-check @ctx1027: max|diff| = 0.00003 (OK)
+   ctx  us/launch     min_us   modelMB      GB/s ms/step28
+   256      92.71      92.67     17.17     185.3    2.596
+   512     180.85     180.85     33.96     187.8    5.064
+   768     268.87     267.52     50.74     188.7    7.528
+  1024     353.83     353.76     67.52     190.8    9.907
+  1152     376.21     376.17     75.91     201.8   10.534
+  1280     417.90     417.87     84.30     201.7   11.701
+  1536     501.03     500.88    101.08     201.7   14.029
+  2048     667.47     667.47    134.64     201.7   18.689
+done

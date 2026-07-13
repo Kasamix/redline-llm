@@ -1,0 +1,13 @@
+{
+ "http_streaming_throughput_tok_s": 1205.0960411624656,
+ "batched_bench_row": {
+  "PP": 1024,
+  "TG": 256,
+  "B": 64,
+  "T_s": 4.14,
+  "S_total_tok_s": 19786.72
+ },
+ "batched_bench_gen_equiv_tok_s": 3957.4879227053143,
+ "http_overhead_pct_of_batched_bench": 69.54896478019648,
+ "definition": "gen_equiv = TG*B/T (generated tokens / full window incl. prefill, same shape as the harness headline); delta = (gen_equiv - http)/gen_equiv"
+}

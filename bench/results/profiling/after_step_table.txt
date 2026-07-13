@@ -1,0 +1,21 @@
+# decode window: 511 steps, wall 2721.754 ms, kernel-busy 2621.961 ms, memset 14.039 ms (14308)
+kernel                                        n/step    avg us    tot ms  % ktime  shapes
+Kernel2                                        85.00    34.566  1501.357   57.26%  (8, 35, 3)x(128, 1, 1) (8, 297, 1)x(128, 1, 1) (16, 6, 1)x(1
+ampere_fp16_s16816gemm_fp16_64x64_ldg8_f2f_s   28.00    34.532   494.083   18.84%  (24, 1, 5)x(128, 1, 1)
+PagedAttentionDecodeKernel                     28.00    32.610   466.580   17.80%  (64, 2, 1)x(256, 1, 1)
+RmsNormResidualVecKernel                       56.00     1.896    54.249    2.07%  (64, 1, 1)x(512, 1, 1)
+SiluMulHalf2Kernel                             28.00     2.132    30.505    1.16%  (18, 64, 1)x(256, 1, 1)
+RopeInplaceSharedKernel                        28.00     1.613    23.075    0.88%  (64, 2, 1)x(448, 1, 1)
+splitKreduce_kernel                            28.00     1.522    21.773    0.83%  (48, 4, 1)x(32, 16, 1)
+KvScatterKernel                                28.00     1.267    18.133    0.69%  (64, 1, 1)x(128, 1, 1)
+GreedyArgmaxVecKernel                           1.00    20.533    10.492    0.40%  (64, 1, 1)x(1024, 1, 1)
+RmsNormVecKernel                                1.00     1.790     0.915    0.03%  (64, 1, 1)x(512, 1, 1)
+EmbedGatherVec8Kernel                           1.00     1.562     0.798    0.03%  (64, 1, 1)x(192, 1, 1)
+
+GEMM total              2017.214 ms   76.94% of kernel time
+attention total          466.580 ms   17.80%
+small-kernel total       138.167 ms    5.27%
+other kernels              0.000 ms    0.00%
+memsets                   14.039 ms  (+ 0.54% of kernel time)
+non-GEMM non-attention (small+other+memset) = 152.206 ms = 5.77% of decode GPU work, 297.9 us/step over 511 steps
+per-step GPU work: 5158.5 us; wall/step 5326.3 us

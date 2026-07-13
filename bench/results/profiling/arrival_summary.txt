@@ -1,0 +1,7 @@
+top-level keys: ['case', 'dispersion', 'engine', 'engine_config', 'engine_stats', 'environment', 'forced_length_ok', 'lt_algo_report', 'median_trial_index', 'metrics', 'schema_version', 'seed', 'trials', 'warmup', 'workload']
+file                               chunk   kv  mb      tok/s  ttft50ms  ttft99ms  itl50ms  itl99ms
+arrival_strictdefaults.json         None None None    1013.19   4026.73   8110.73     6.92    31.52
+arrival_chunk2048_r1.json           None None None    2018.37     35.45     39.47     7.21    31.96
+arrival_chunk2048_r2.json           None None None    2018.42     35.89     39.24     7.22    31.80
+arrival_chunk1024_r1.json           None None None    2020.18     35.81     39.27     7.20    31.85
+arrival_chunk1024_r2.json           None None None    2020.56     35.38     39.50     7.17    31.98

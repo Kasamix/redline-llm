@@ -1,0 +1,285 @@
+{
+  "suite": "c (HF greedy parity)",
+  "design": "docs/DESIGN.md section 12c",
+  "thresholds": {
+    "agreement_floor": 0.99,
+    "coinflip_margin": 0.1
+  },
+  "reference": {
+    "path": "/home/kasamix/redline_ref/hf_ref_receipt.json",
+    "schema_version": 1,
+    "meta": {
+      "model_dir": "/home/kasamix/models/Qwen2.5-1.5B-Instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "gpu_name": "NVIDIA GeForce RTX 2060",
+      "torch_version": "2.13.0+cu126",
+      "transformers_version": "5.13.0",
+      "attn_implementation": "sdpa",
+      "dtype": "float16",
+      "max_new_tokens": 128,
+      "topk": 10,
+      "eos_token_ids": [
+        151645,
+        151643
+      ],
+      "add_special_tokens": false,
+      "num_positions": 2560
+    },
+    "neutralization": {
+      "do_sample": false,
+      "repetition_penalty": 1.0,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "method": "manual-argmax-on-raw-logits",
+      "shipped_generation_config": {
+        "do_sample": true,
+        "repetition_penalty": 1.1,
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20
+      }
+    },
+    "prompts": 20,
+    "positions": 2560
+  },
+  "meta": {
+    "created_utc": "2026-07-10T09:09:35Z",
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "model_dir": "/home/kasamix/models/Qwen2.5-1.5B-Instruct",
+    "reference_path": "/home/kasamix/redline_ref/hf_ref_receipt.json",
+    "engine_kwargs_option": null
+  },
+  "engine": {
+    "module_file": "/home/kasamix/build/redline/redline.cpython-312-x86_64-linux-gnu.so",
+    "module_version": "0.1.0",
+    "engine_kwargs": {}
+  },
+  "teacher_forced_agreement": {
+    "gating": true,
+    "positions": 2560,
+    "agreements": 2547,
+    "rate": 0.994921875,
+    "coinflip_disagreements_below_margin": 13,
+    "fatal_disagreements_at_or_above_margin": 0,
+    "fatal_detail": [],
+    "pass": true
+  },
+  "first_token_check": {
+    "gating": true,
+    "prompts": 20,
+    "exact_argmax_matches": 20,
+    "failures": [],
+    "pass": true
+  },
+  "free_running_prefix_match": {
+    "gating": false,
+    "per_prompt": [
+      {
+        "index": 0,
+        "category": "short",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 1,
+        "category": "short",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 2,
+        "category": "short",
+        "matched_prefix": 73,
+        "length": 128,
+        "first_divergence": {
+          "pos": 73,
+          "engine_token": 13,
+          "hf_token": 624,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 3,
+        "category": "short",
+        "matched_prefix": 16,
+        "length": 128,
+        "first_divergence": {
+          "pos": 16,
+          "engine_token": 2896,
+          "hf_token": 27906,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 4,
+        "category": "short",
+        "matched_prefix": 113,
+        "length": 128,
+        "first_divergence": {
+          "pos": 113,
+          "engine_token": 44734,
+          "hf_token": 279,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 5,
+        "category": "medium",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 6,
+        "category": "medium",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 7,
+        "category": "medium",
+        "matched_prefix": 75,
+        "length": 128,
+        "first_divergence": {
+          "pos": 75,
+          "engine_token": 1083,
+          "hf_token": 2155,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 8,
+        "category": "medium",
+        "matched_prefix": 44,
+        "length": 128,
+        "first_divergence": {
+          "pos": 44,
+          "engine_token": 2615,
+          "hf_token": 6786,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 9,
+        "category": "medium",
+        "matched_prefix": 5,
+        "length": 128,
+        "first_divergence": {
+          "pos": 5,
+          "engine_token": 11,
+          "hf_token": 13,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 10,
+        "category": "medium",
+        "matched_prefix": 15,
+        "length": 128,
+        "first_divergence": {
+          "pos": 15,
+          "engine_token": 220,
+          "hf_token": 3055,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 11,
+        "category": "medium",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 12,
+        "category": "medium",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 13,
+        "category": "medium",
+        "matched_prefix": 45,
+        "length": 128,
+        "first_divergence": {
+          "pos": 45,
+          "engine_token": 1550,
+          "hf_token": 19492,
+          "hf_margin": 0.015625
+        }
+      },
+      {
+        "index": 14,
+        "category": "medium",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 15,
+        "category": "long",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 16,
+        "category": "long",
+        "matched_prefix": 117,
+        "length": 128,
+        "first_divergence": {
+          "pos": 117,
+          "engine_token": 825,
+          "hf_token": 6008,
+          "hf_margin": 0.015625
+        }
+      },
+      {
+        "index": 17,
+        "category": "long",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      },
+      {
+        "index": 18,
+        "category": "long",
+        "matched_prefix": 20,
+        "length": 128,
+        "first_divergence": {
+          "pos": 20,
+          "engine_token": 279,
+          "hf_token": 807,
+          "hf_margin": 0.0
+        }
+      },
+      {
+        "index": 19,
+        "category": "long",
+        "matched_prefix": 128,
+        "length": 128,
+        "first_divergence": null
+      }
+    ],
+    "mean_matched_prefix": 90.15,
+    "min_matched_prefix": 5,
+    "max_matched_prefix": 128
+  },
+  "forced_token_echo_tripwire": {
+    "gating": true,
+    "prompt_index": 19,
+    "position": 101,
+    "hf_margin": 16.4375,
+    "garbage_token": 0,
+    "hf_argmax_token": 6559,
+    "engine_emitted": 6559,
+    "pass": true
+  }
+}

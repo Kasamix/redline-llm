@@ -1,0 +1,40 @@
+{
+ "shape": "primary 64 x 1024/256, temperature 0, ignore_eos, cache_prompt false, token arrays",
+ "waves": [
+  {
+   "name": "W1 stream=True  default-chain",
+   "wall_s": 14.092833762057126,
+   "total_tokens": 16384,
+   "throughput_tok_s": 1162.5766880264707,
+   "forced_length_ok": true
+  },
+  {
+   "name": "W2 stream=False default-chain",
+   "wall_s": 9.621183245908469,
+   "total_tokens": 16384,
+   "throughput_tok_s": 1702.9090478000724,
+   "forced_length_ok": true
+  },
+  {
+   "name": "W3 stream=False top_k=1",
+   "wall_s": 9.46085688425228,
+   "total_tokens": 16384,
+   "throughput_tok_s": 1731.7670270725037,
+   "forced_length_ok": true
+  },
+  {
+   "name": "W4 stream=True  top_k=1",
+   "wall_s": 12.255023246631026,
+   "total_tokens": 16384,
+   "throughput_tok_s": 1336.9211685913408,
+   "forced_length_ok": true
+  }
+ ],
+ "greedy_identity": {
+  "w2_eq_w3": true,
+  "w1_eq_w4": true
+ },
+ "sse_cost_pct_default_chain": 31.72996000412575,
+ "sampler_chain_cost_pct_nonstream": 1.66638923257563,
+ "combined_gain_w4_vs_w1_pct": 14.996385387774131
+}
