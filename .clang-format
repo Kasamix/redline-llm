@@ -1,0 +1,13 @@
+# LLVM-based style, 100-column limit. Enforced in CI with clang-format 18
+# (--dry-run --Werror) over *.cpp / *.hpp / *.cu / *.cuh.
+BasedOnStyle: LLVM
+ColumnLimit: 100
+IndentWidth: 2
+AccessModifierOffset: -1
+PointerAlignment: Left
+DerivePointerAlignment: false
+AllowShortFunctionsOnASingleLine: Inline
+IncludeBlocks: Preserve
+SortIncludes: CaseSensitive
+InsertNewlineAtEOF: true
+LineEnding: LF

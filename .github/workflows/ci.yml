@@ -1,0 +1,67 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  format:
+    name: clang-format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install clang-format (pinned)
+        run: pip install clang-format==18.1.8
+      - name: Check formatting
+        run: |
+          find src tests \( -name '*.cpp' -o -name '*.hpp' -o -name '*.cu' -o -name '*.cuh' \) -print0 \
+            | xargs -0 clang-format --dry-run --Werror
+
+  bench:
+    name: bench harness (CPU-only pytest + committed-results audit)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pytest (the harness itself is stdlib-only)
+        run: pip install pytest
+      - name: Cross-language workload identity selftest
+        run: python -m bench.workload --selftest
+      - name: Harness tests (workload goldens, metric formulas + doctests, runner, report)
+        run: python -m pytest bench/ -q
+      - name: Audit committed results (schema; forced lengths and metrics recomputed from the raw per-token data)
+        run: python -m bench.report --check bench/results/raw/
+      - name: Regenerated README table must match the committed one
+        run: |
+          python -m bench.report --results bench/results/raw/ --write-readme README.md
+          git diff --exit-code README.md
+
+  build:
+    name: compile check (CUDA 12.6 toolkit, no GPU)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install CUDA 12.6 toolkit (network repo, toolkit only - no driver)
+        run: |
+          wget -q https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb
+          sudo dpkg -i cuda-keyring_1.1-1_all.deb
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends cuda-toolkit-12-6 ninja-build python3-dev
+      - name: Configure (python module ON - the pybind glue must compile in CI too)
+        run: |
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_CUDA_COMPILER=/usr/local/cuda-12.6/bin/nvcc \
+            -DREDLINE_BUILD_TESTS=ON \
+            -DREDLINE_BUILD_PYTHON=ON
+      - name: Build all targets (redline_core, redline_bench, redline module, redline_tests - runners have no GPU)
+        run: cmake --build build
+      - name: Run CPU-only unit tests (GPU-dependent tests skip cleanly)
+        run: ctest --test-dir build --output-on-failure

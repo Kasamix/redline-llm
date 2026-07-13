@@ -1,0 +1,65 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 26, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "REDLINE_BUILD_TESTS": "ON",
+        "REDLINE_BUILD_PYTHON": "ON"
+      }
+    },
+    {
+      "name": "wsl-debug",
+      "displayName": "WSL debug (RTX 2060, sm_75)",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_CUDA_ARCHITECTURES": "75"
+      }
+    },
+    {
+      "name": "wsl-release",
+      "displayName": "WSL release (RTX 2060, sm_75)",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CUDA_ARCHITECTURES": "75"
+      }
+    },
+    {
+      "name": "pod-release",
+      "displayName": "Bench pod release (RTX 4090, sm_89)",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CUDA_ARCHITECTURES": "89"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "wsl-debug", "configurePreset": "wsl-debug" },
+    { "name": "wsl-release", "configurePreset": "wsl-release" },
+    { "name": "pod-release", "configurePreset": "pod-release" }
+  ],
+  "testPresets": [
+    {
+      "name": "wsl-debug",
+      "configurePreset": "wsl-debug",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "wsl-release",
+      "configurePreset": "wsl-release",
+      "output": { "outputOnFailure": true }
+    },
+    {
+      "name": "pod-release",
+      "configurePreset": "pod-release",
+      "output": { "outputOnFailure": true }
+    }
+  ]
+}

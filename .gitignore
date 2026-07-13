@@ -1,0 +1,29 @@
+build/
+*.o
+*.so
+*.pyd
+__pycache__/
+.venv/
+venv/
+models/
+*.safetensors
+*.gguf
+.cache/
+*.nsys-rep
+*.sqlite
+.secrets/
+.vs/
+.vscode/
+CMakeUserPresets.json
+
+# NOTE: bench/results/addendum-vllm024/ (the preliminary vLLM 0.24 trials
+# superseded by the formal vllm024 arm) is deliberately TRACKED: FAIRNESS.md
+# references the supersession, so the superseded raw files must be auditable
+# from a clone (see bench/FAIRNESS.md "Engine configuration").
+
+# test/bench run artifacts at repo root
+/invariance_report.json
+/*_report.json
+
+# superseded preliminary measurements (formal protocol re-run supersedes; archived in ops)
+/bench/results/addendum-vllm024/
